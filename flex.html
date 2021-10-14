@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display flex</title>
+    <style>
+        .flex{
+            max-width: 300px;
+            padding: 10px;
+            border: 2px solid black;
+            display: flex;
+        }
+        .item{
+            background-color: aquamarine;
+            margin: 5px;
+        }
+        .flex-direction{
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            list-style: none;   
+            width:100%;         
+        }
+        .item-direction{
+            background: green;
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+        .row-reverse{
+            flex-direction: row-reverse;
+        }
+        .row-reverse li{
+            background-color: red;
+        }
+        .column{
+            float: left;
+            flex-direction: column;
+        }
+        .column li{
+            background-color: orangered;
+        }
+        .column-reverse{
+            float: right;
+            flex-direction: column-reverse;
+        }
+        .column-reverse li{
+            background-color: purple;
+        }
+        .flex-wrap{
+            display: flex;
+            height: 100px;
+            border: 2px solid black;
+            max-width: 300px;
+            flex-direction: row;
+        }
+        .item-wrap{
+            font-size: 24px;
+            height: 50px;
+            text-align: center;
+            width: 100px;
+            line-height: 60px;
+            min-width: 100px;
+        }
+        .blue{
+            background-color: lightblue;
+        }
+        .orange{
+            background-color: orange;
+        }
+        .green{
+            background-color: greenyellow;
+        }
+        .wrap{
+            flex-wrap: wrap;
+        }
+        .wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+    </style>
+</head>
+<body>
+    <h2>Flex container</h2>
+    <div class="flex">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+    <h2>Flex direction row</h2>
+    <ul class="flex-direction">
+        <li class="item-direction">1</li>
+        <li class="item-direction">2</li>
+        <li class="item-direction">3</li>
+        <li class="item-direction">4</li>
+        <li class="item-direction">5</li>
+    </ul>
+    <h2>Flex direction row-reverse</h2>
+    <ul class="flex-direction row-reverse">
+        <li class="item-direction">1</li>
+        <li class="item-direction">2</li>
+        <li class="item-direction">3</li>
+        <li class="item-direction">4</li>
+        <li class="item-direction">5</li>
+    </ul>
+    <h2>Flex direction column</h2>
+    <ul class="flex-direction column">
+        <li class="item-direction">1</li>
+        <li class="item-direction">2</li>
+        <li class="item-direction">3</li>
+        <li class="item-direction">4</li>
+        <li class="item-direction">5</li>
+    </ul>
+    <h2>Flex direction column-reverse</h2>    
+    <ul class="flex-direction column-reverse">
+        <li class="item-direction">1</li>
+        <li class="item-direction">2</li>
+        <li class="item-direction">3</li>
+        <li class="item-direction">4</li>
+        <li class="item-direction">5</li>
+    </ul>    
+    <h2>Flex nonwrap</h2>
+    <div class="flex-wrap">
+        <div class="item-wrap blue">1</div>
+        <div class="item-wrap orange">2</div>
+        <div class="item-wrap green">3</div>
+        <div class="item-wrap blue">3</div>
+    </div>
+    <h2>Flex wrap</h2>
+    <div class="flex-wrap wrap">
+        <div class="item-wrap blue">1</div>
+        <div class="item-wrap orange">2</div>
+        <div class="item-wrap green">3</div>
+        <div class="item-wrap blue">3</div>  
+    </div>
+    <h2>Flex wrap-reverse</h2>
+    <div class="flex-wrap wrap-reverse">
+        <div class="item-wrap blue">1</div>
+        <div class="item-wrap orange">2</div>
+        <div class="item-wrap green">3</div>
+        <div class="item-wrap blue">3</div>  
+    </div>
+</body>
+</html>
