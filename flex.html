@@ -13,8 +13,9 @@
             display: flex;
         }
         .item{
-            background-color: aquamarine;
+            background-color:lightcyan;
             margin: 5px;
+            text-align: center;
         }
         .flex-direction{
             margin: 0px;
@@ -40,7 +41,7 @@
             background-color: red;
         }
         .column{
-            float: left;
+            float: right;
             flex-direction: column;
         }
         .column li{
@@ -83,15 +84,117 @@
         .wrap-reverse{
             flex-wrap: wrap-reverse;
         }
+        .flex-flow{
+            display: flex;
+            border: 1px solid black;
+            max-width: 500px;
+            max-height: 500px;
+            flex-flow: column-reverse wrap-reverse;
+        }
+        .item-flow{
+            background-color: violet;
+            margin: 5px;
+            color: azure;
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            line-height: 50px;
+        }
+        .flex-end{
+            justify-content: flex-end;
+        }
+        .flex-center{
+            justify-content: center;
+        }
+        .flex-space-between{
+            justify-content: space-between;
+        }
+        .flex-space-around{
+            justify-content: space-around;
+        }
+        .column2{
+            flex-direction: column;
+            height: 300px;
+            color:brown;
+        }
+        .item-aling{
+            background-color: cadetblue;
+            margin: 5px;
+            color: bisque;
+            text-align: center;
+            flex: 1;
+        }
+        .flex2{
+            flex: 1;
+        }
+        .center{
+            align-items: center;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .start{
+            align-items: flex-start;
+        }
+        .end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .central{
+            height: 300px;
+            justify-content: center;
+
+        }
+        .central .item-aling{
+            flex: 0;
+            padding: 20px;
+        }
+        .flex3{
+            height: 400px;
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+        .item-content{
+            background-color: olivedrab;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: gainsboro;
+        }
+        .centerc{
+            align-content: center;
+        }
+        .stretchc{
+            align-content: stretch;
+        }
+        .startc{
+            align-content: flex-start;
+        }
+        .endc{
+            align-content: flex-end;
+        }
+        .space-aroundc{
+            align-content: space-around;
+        }
+        .space-betweenc{
+            align-content: space-between;
+        }
     </style>
 </head>
 <body>
-    <h2>Flex container</h2>
+    <h1>Flex container</h1>
     <div class="flex">
         <div class="item">item 1</div>
         <div class="item">item 2</div>
         <div class="item">item 3</div>
     </div>
+    <br><h1>Flex direction</h1>
     <h2>Flex direction row</h2>
     <ul class="flex-direction">
         <li class="item-direction">1</li>
@@ -124,6 +227,7 @@
         <li class="item-direction">4</li>
         <li class="item-direction">5</li>
     </ul>    
+    <br><h1>Flex wrap</h1>
     <h2>Flex nonwrap</h2>
     <div class="flex-wrap">
         <div class="item-wrap blue">1</div>
@@ -145,5 +249,202 @@
         <div class="item-wrap green">3</div>
         <div class="item-wrap blue">3</div>  
     </div>
+    <br><h1>Flex flow</h1>
+    <h2>Flex flow (column-reverse + wrap-reverse)</h2>
+    <div class="flex-flow">
+        <div class="item-flow">1</div>
+        <div class="item-flow">2</div>
+        <div class="item-flow">3</div>
+        <div class="item-flow">4</div>
+        <div class="item-flow">5</div>
+        <div class="item-flow">6</div>
+    </div>
+    <br><h1>Flex justify content</h1>
+    <h2>Flex justify start</h2>
+    <section class="flex">
+        <div class="item">Item alpha</div>
+        <div class="item">Item beta</div>
+        <div class="item">Item gama</div>
+    </section>
+    <h2>Flex justify start column</h2>
+    <section class="flex column2">
+        <div class="item">Item alpha</div>
+        <div class="item">Item beta</div>
+        <div class="item">Item gama</div>
+    </section>
+    <h2>Flex justify end</h2>
+    <section class="flex flex-end">
+        <div class="item">Item alpha</div>
+        <div class="item">Item beta</div>
+        <div class="item">Item gama</div>
+    </section>
+    <h2>Flex justify end column</h2>
+    <section class="flex flex-end column2">
+        <div class="item">Item alpha</div>
+        <div class="item">Item beta</div>
+        <div class="item">Item gama</div>
+    </section>
+    <h2>Flex justify center</h2>
+    <section class="flex flex-center">
+        <div class="item">Item alpha</div>
+        <div class="item">Item beta</div>
+        <div class="item">Item gama</div>
+    </section>
+    <h2>Flex justify center column</h2>
+    <section class="flex flex-center column2">
+        <div class="item">Item alpha</div>
+        <div class="item">Item beta</div>
+        <div class="item">Item gama</div>
+    </section>
+    <h2>Flex justify space-between</h2>
+    <section class="flex flex-space-between">
+        <div class="item">Item alpha</div>
+        <div class="item">Item beta</div>
+        <div class="item">Item gama</div>
+    </section>
+    <h2>Flex justify space-between column</h2>
+    <section class="flex flex-space-between column2">
+        <div class="item">Item alpha</div>
+        <div class="item">Item beta</div>
+        <div class="item">Item gama</div>
+    </section>
+    <h2>Flex justify space-around</h2>
+    <section class="flex flex-space-around">
+        <div class="item">Item alpha</div>
+        <div class="item">Item beta</div>
+        <div class="item">Item gama</div>
+    </section>
+    <h2>Flex justify space-around column</h2>
+    <section class="flex flex-space-around column2">
+        <div class="item">Item alpha</div>
+        <div class="item">Item beta</div>
+        <div class="item">Item gama</div>
+    </section>
+    <br><h1>Flex align items</h1>
+    <h2>Flex align items center</h2>
+    <section class="flex center flex2">
+        <div class="item-aling">um</div>
+        <div class="item-aling">dois, três</div>
+        <div class="item-aling">quatro, cinco, seis, sete, oito, nove, dez</div> 
+    </section> 
+    <h2>Flex align center items column</h2>
+    <section class="flex center flex2 column2">
+        <div class="item-aling">um</div>
+        <div class="item-aling">dois, três</div>
+        <div class="item-aling">quatro, cinco, seis, sete, oito, nove, dez</div> 
+    </section> 
+    <h2>Flex align items stretch</h2>
+    <section class="flex stretch flex2">
+        <div class="item-aling">um</div>
+        <div class="item-aling">dois, três</div>
+        <div class="item-aling">quatro, cinco, seis, sete, oito, nove, dez</div> 
+    </section>
+    <h2>Flex align items stretch column</h2>
+    <section class="flex stretch flex2 column2">
+        <div class="item-aling">um</div>
+        <div class="item-aling">dois, três</div>
+        <div class="item-aling">quatro, cinco, seis, sete, oito, nove, dez</div> 
+    </section>
+    <h2>Flex align items start</h2>
+    <section class="flex start flex2">
+        <div class="item-aling">um</div>
+        <div class="item-aling">dois, três</div>
+        <div class="item-aling">quatro, cinco, seis, sete, oito, nove, dez</div> 
+    </section>
+    <h2>Flex align items start column</h2>
+    <section class="flex start flex2 column2">
+        <div class="item-aling">um</div>
+        <div class="item-aling">dois, três</div>
+        <div class="item-aling">quatro, cinco, seis, sete, oito, nove, dez</div> 
+    </section> 
+    <h2>Flex align items end</h2>
+    <section class="flex end flex2">
+        <div class="item-aling">um</div>
+        <div class="item-aling">dois, três</div>
+        <div class="item-aling">quatro, cinco, seis, sete, oito, nove, dez</div> 
+    </section>
+    <h2>Flex align items end column</h2>
+    <section class="flex end flex2 column2">
+        <div class="item-aling">um</div>
+        <div class="item-aling">dois, três</div>
+        <div class="item-aling">quatro, cinco, seis, sete, oito, nove, dez</div> 
+    </section>  
+    <h2>Flex align items baseline</h2>
+    <section class="flex baseline flex2">
+        <div class="item-aling"><br>um</div>
+        <div class="item-aling">dois, três</div>
+        <div class="item-aling">quatro, cinco, seis, sete, oito, nove, dez</div> 
+    </section> 
+    <h2>Flex align items baseline column</h2>
+    <section class="flex baseline flex2 column2">
+        <div class="item-aling"><br>um</div>
+        <div class="item-aling">dois, três</div>
+        <div class="item-aling">quatro, cinco, seis, sete, oito, nove, dez</div> 
+    </section>    
+    <h2>Texto alinhado no centro do container</h2>
+    <section class="flex center central">
+        <dir class="item-aling">É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica.</dir>
+    </section>
+    <br><h1>Flex align content</h1>
+    <h2>Flex align content center</h2>
+    <section class="flex3 centerc">
+        <div class="item-content">um</div>
+        <div class="item-content">dois, três</div>
+        <div class="item-content">quatro, cinco, seis, sete, oito, nove, dez</div> 
+        <div class="item-content">um</div>
+        <div class="item-content">dois, três</div>
+        <div class="item-content">quatro, cinco, seis, sete, oito, nove, dez</div>
+    </section>  
+    <h2>Flex align content stretch</h2>
+    <section class="flex3 stretchc">
+        <div class="item-content">um</div>
+        <div class="item-content">dois, três</div>
+        <div class="item-content">quatro, cinco, seis, sete, oito, nove, dez</div> 
+        <div class="item-content">um</div>
+        <div class="item-content">dois, três</div>
+        <div class="item-content">quatro, cinco, seis, sete, oito, nove, dez</div> 
+    </section>
+    <h2>Flex align content start</h2>
+    <section class="flex3 startc">
+        <div class="item-content">um</div>
+        <div class="item-content">dois, três</div>
+        <div class="item-content">quatro, cinco, seis, sete, oito, nove, dez</div> 
+        <div class="item-content">um</div>
+        <div class="item-content">dois, três</div>
+        <div class="item-content">quatro, cinco, seis, sete, oito, nove, dez</div> 
+    </section> 
+    <h2>Flex align content end</h2>
+    <section class="flex3 endc">
+        <div class="item-content">um</div>
+        <div class="item-content">dois, três</div>
+        <div class="item-content">quatro, cinco, seis, sete, oito, nove, dez</div> 
+        <div class="item-content">um</div>
+        <div class="item-content">dois, três</div>
+        <div class="item-content">quatro, cinco, seis, sete, oito, nove, dez</div> 
+    </section>
+    <h2>Flex align content space-around</h2>
+    <section class="flex3 space-aroundc">
+        <div class="item-content">um</div>
+        <div class="item-content">dois, três</div>
+        <div class="item-content">quatro, cinco, seis, sete, oito, nove, dez</div> 
+        <div class="item-content">um</div>
+        <div class="item-content">dois, três</div>
+        <div class="item-content">quatro, cinco, seis, sete, oito, nove, dez</div>
+        <div class="item-content">um</div>
+        <div class="item-content">dois, três</div>
+        <div class="item-content">quatro, cinco, seis, sete, oito, nove, dez</div>  
+    </section>
+    <h2>Flex align content space-between</h2>
+    <section class="flex3 space-betweenc">
+        <div class="item-content">um</div>
+        <div class="item-content">dois, três</div>
+        <div class="item-content">quatro, cinco, seis, sete, oito, nove, dez</div> 
+        <div class="item-content">um</div>
+        <div class="item-content">dois, três</div>
+        <div class="item-content">quatro, cinco, seis, sete, oito, nove, dez</div>  
+        <div class="item-content">um</div>
+        <div class="item-content">dois, três</div>
+        <div class="item-content">quatro, cinco, seis, sete, oito, nove, dez</div>
+    </section>
 </body>
 </html>
