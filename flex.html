@@ -41,7 +41,6 @@
             background-color: red;
         }
         .column{
-            float: right;
             flex-direction: column;
         }
         .column li{
@@ -124,9 +123,6 @@
             text-align: center;
             flex: 1;
         }
-        .flex2{
-            flex: 1;
-        }
         .center{
             align-items: center;
         }
@@ -184,6 +180,97 @@
         }
         .space-betweenc{
             align-content: space-between;
+        }
+        .flex-grow{
+            display: flex;
+           border: 2px solid black;
+           max-width: 500px;
+        }
+        .item-grow{
+            background-color: orchid;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+            color: antiquewhite;
+        }
+        .fg-0{
+            flex-grow: 0;
+        }
+        .fg-1{
+            flex-grow: 1;
+        }
+        .fg-2{
+            flex-grow: 2;
+        }
+        .fg-3{
+            flex-grow: 3;
+        }
+        .b-auto{
+            flex-basis: auto;
+        }
+        .b-0{
+            flex-basis: 0;
+        }
+        .bw-50{
+            flex-basis: 50px;
+        }
+        .s-1{
+            flex-shrink: 1;
+        }
+        .s-0{
+            flex-shrink: 0;
+        }
+        .s-2{
+            flex-shrink: 2;
+        }
+        .s-3{
+            flex-shrink: 3;
+        }
+        .flex-flex{
+            display: flex;
+            border: 1px solid black;
+            max-width: 400px;
+            width: 100%;
+        }
+        .item-flex{
+            background-color: crimson;
+            color: mistyrose;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+        .flex-1{
+            flex: 1;
+            /*grow=1, shrink=1, basis=0*/
+        }
+        .flex-2{
+            flex: 2;
+            /*grow=2, shrink=1, basis=0*/
+        }
+        .o-1{
+            order: 1;
+        }
+        .o-2{
+            order: 2;
+        }
+        .o-3{
+            order: 3;
+        }
+        .a-c{
+            align-self: center;
+        }
+        .a-s{
+            align-self: flex-start;
+        }
+        .a-e{
+            align-self: flex-end;
+        }
+        .a-b{
+            align-self: baseline;
+        }
+        .a-st{
+            align-self: stretch;
         }
     </style>
 </head>
@@ -322,61 +409,61 @@
     </section>
     <br><h1>Flex align items</h1>
     <h2>Flex align items center</h2>
-    <section class="flex center flex2">
+    <section class="flex center flex-1">
         <div class="item-aling">um</div>
         <div class="item-aling">dois, três</div>
         <div class="item-aling">quatro, cinco, seis, sete, oito, nove, dez</div> 
     </section> 
     <h2>Flex align center items column</h2>
-    <section class="flex center flex2 column2">
+    <section class="flex center flex-1 column2">
         <div class="item-aling">um</div>
         <div class="item-aling">dois, três</div>
         <div class="item-aling">quatro, cinco, seis, sete, oito, nove, dez</div> 
     </section> 
     <h2>Flex align items stretch</h2>
-    <section class="flex stretch flex2">
+    <section class="flex stretch flex-1">
         <div class="item-aling">um</div>
         <div class="item-aling">dois, três</div>
         <div class="item-aling">quatro, cinco, seis, sete, oito, nove, dez</div> 
     </section>
     <h2>Flex align items stretch column</h2>
-    <section class="flex stretch flex2 column2">
+    <section class="flex stretch flex-1 column2">
         <div class="item-aling">um</div>
         <div class="item-aling">dois, três</div>
         <div class="item-aling">quatro, cinco, seis, sete, oito, nove, dez</div> 
     </section>
     <h2>Flex align items start</h2>
-    <section class="flex start flex2">
+    <section class="flex start flex-1">
         <div class="item-aling">um</div>
         <div class="item-aling">dois, três</div>
         <div class="item-aling">quatro, cinco, seis, sete, oito, nove, dez</div> 
     </section>
     <h2>Flex align items start column</h2>
-    <section class="flex start flex2 column2">
+    <section class="flex start flex-1 column2">
         <div class="item-aling">um</div>
         <div class="item-aling">dois, três</div>
         <div class="item-aling">quatro, cinco, seis, sete, oito, nove, dez</div> 
     </section> 
     <h2>Flex align items end</h2>
-    <section class="flex end flex2">
+    <section class="flex end flex-1">
         <div class="item-aling">um</div>
         <div class="item-aling">dois, três</div>
         <div class="item-aling">quatro, cinco, seis, sete, oito, nove, dez</div> 
     </section>
     <h2>Flex align items end column</h2>
-    <section class="flex end flex2 column2">
+    <section class="flex end flex-1 column2">
         <div class="item-aling">um</div>
         <div class="item-aling">dois, três</div>
         <div class="item-aling">quatro, cinco, seis, sete, oito, nove, dez</div> 
     </section>  
     <h2>Flex align items baseline</h2>
-    <section class="flex baseline flex2">
+    <section class="flex baseline flex-1">
         <div class="item-aling"><br>um</div>
         <div class="item-aling">dois, três</div>
         <div class="item-aling">quatro, cinco, seis, sete, oito, nove, dez</div> 
     </section> 
     <h2>Flex align items baseline column</h2>
-    <section class="flex baseline flex2 column2">
+    <section class="flex baseline flex-1 column2">
         <div class="item-aling"><br>um</div>
         <div class="item-aling">dois, três</div>
         <div class="item-aling">quatro, cinco, seis, sete, oito, nove, dez</div> 
@@ -446,5 +533,135 @@
         <div class="item-content">dois, três</div>
         <div class="item-content">quatro, cinco, seis, sete, oito, nove, dez</div>
     </section>
+    <br><h1>Flex grow</h1>
+    <h2>Flex grow=0</h2>
+    <div class="flex-grow">
+        <div class="item-grow fg-0">A</div>
+        <div class="item-grow fg-0">B</div>
+        <div class="item-grow fg-0">C</div>
+        <div class="item-grow fg-0">D</div>
+    </div>
+    <h2>Flex grow=1</h2>
+    <div class="flex-grow">
+        <div class="item-grow fg-1">A</div>
+        <div class="item-grow fg-1">B</div>
+        <div class="item-grow fg-1">C</div>
+        <div class="item-grow fg-1">D</div>
+    </div>
+    <h2>Flex grow=0, 1, 2 e 3</h2>
+    <div class="flex-grow">
+        <div class="item-grow fg-0">A</div>
+        <div class="item-grow fg-1">B</div>
+        <div class="item-grow fg-2">C</div>
+        <div class="item-grow fg-3">D</div>
+    </div>
+    <br><h1>Flex basis</h1>
+    <h2>Flex basis auto</h2>
+        <div class="flex-grow">
+        <div class="item-grow b-auto fg-1">a</div>
+        <div class="item-grow b-auto fg-1">bbb</div>
+        <div class="item-grow b-auto fg-1">c</div>
+        <div class="item-grow b-auto fg-1">ddddddddd</div>
+    </div>
+    <h2>Flex basis=0</h2>
+    <div class="flex-grow">
+        <div class="item-grow b-0 fg-1">a</div>
+        <div class="item-grow b-0 fg-1">bbb</div>
+        <div class="item-grow b-0 fg-1">c</div>
+        <div class="item-grow b-0 fg-1">ddddddddd</div>
+    </div>
+    <h2>Flex basis + width</h2>
+    <div class="flex-grow">
+        <div class="item-grow bw-50">a</div>
+        <div class="item-grow bw-50">bbb</div>
+        <div class="item-grow bw-50">c</div>
+        <div class="item-grow bw-50">ddddddddd</div>
+    </div>
+    <br><h1>Flex shrink</h1>
+    <h2>Flex shrink=1</h2>
+    <div class="flex-grow">
+        <div class="item-grow s-1 fg-1">A</div>
+        <div class="item-grow s-1 fg-1">S</div>
+        <div class="item-grow s-1 fg-1">container flex shrink igual a zero</div>
+        <div class="item-grow s-1 fg-1">F</div>
+        <div class="item-grow s-1 fg-1">G</div>
+    </div>
+    <h2>Flex shrink=0</h2>
+    <div class="flex-grow">
+        <div class="item-grow s-0 fg-1">A</div>
+        <div class="item-grow s-0 fg-1">S</div>
+        <div class="item-grow s-0 fg-1">container flex shrink igual a um</div>
+        <div class="item-grow s-0 fg-1">F</div>
+        <div class="item-grow s-0 fg-1">G</div>
+    </div>
+    <h2>Flex shrink=0, 1, 2, 3</h2>
+    <div class="flex-grow">
+        <div class="item-grow s-1 fg-1">A</div>
+        <div class="item-grow s-2 fg-1">S</div>
+        <div class="item-grow s-0 fg-1">container flex shrink misto</div>
+        <div class="item-grow s-3 fg-1">F</div>
+        <div class="item-grow s-3 fg-1">G</div>
+    </div>
+    <br><h1>Flex flex</h1>
+    <h2>Flex flex=1</h2>
+    <div class="flex-flex">
+        <div class="item-flex flex-1">A</div>
+        <div class="item-flex flex-1">S</div>
+        <div class="item-flex flex-1">flex=1</div>
+        <div class="item-flex flex-1">F</div>
+        <div class="item-flex flex-1">G</div>
+    </div>
+    <h2>Flex flex=1, 2</h2>
+    <div class="flex-flex">
+        <div class="item-flex flex-1">A</div>
+        <div class="item-flex flex-1">S</div>
+        <div class="item-flex flex-2">flex=2</div>
+        <div class="item-flex flex-1">F</div>
+        <div class="item-flex flex-1">G</div>
+    </div>
+    <br><h1>Flex order</h1>
+    <h2>Flex order=0</h2>
+    <div class="flex-flex">
+        <div class="item-flex flex-1">1</div>
+        <div class="item-flex flex-1">2</div>
+        <div class="item-flex flex-1">3</div>
+        <div class="item-flex flex-1">4</div>
+    </div>
+    <h2>Flex order=3, 2, 1, 3</h2>
+    <div class="flex-flex">
+        <div class="item-flex flex-1 o-3">1</div>
+        <div class="item-flex flex-1 o-2">2</div>
+        <div class="item-flex flex-1 o-1">3</div>
+        <div class="item-flex flex-1 o-3">4</div>
+    </div>
+    <h2>Flex column order=0</h2>
+    <div class="flex-flex column">
+        <div class="item-flex flex-1">1</div>
+        <div class="item-flex flex-1">2</div>
+        <div class="item-flex flex-1">3</div>
+        <div class="item-flex flex-1">4</div>
+    </div>
+    <h2>Flex column order=3, 2, 1, 3</h2>
+    <div class="flex-flex column">
+        <div class="item-flex flex-1 o-3">1</div>
+        <div class="item-flex flex-1 o-2">2</div>
+        <div class="item-flex flex-1 o-1">3</div>
+        <div class="item-flex flex-1 o-3">4</div>
+    </div>
+    <br><h1>Flex self align</h1>
+    <h2>Flex self align start, end, center, stretch</h2>
+    <div class="flex-flex">
+        <div class="item-flex a-s">abc</div>
+        <div class="item-flex a-e">123</div>
+        <div class="item-flex a-c">item a</div>
+        <div class="item-flex a-st">Container display flex e com self align igual a stretch</div>
+    </div>
+    <h2>Flex column self align end, baseline, center, stretch</h2>
+    <div class="flex-flex column">
+        <div class="item-flex a-e">abc</div>
+        <div class="item-flex a-b">123</div>
+        <div class="item-flex a-c">item a</div>
+        <div class="item-flex a-st">Container display flex e com self align igual a baseline</div>
+    </div>
 </body>
 </html>
