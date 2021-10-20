@@ -148,7 +148,7 @@ header .menu{
     line-height: 50px;
     padding: 5px 10px;
     color: #112A57;
-    font-size: 12px;
+    font-size: 16px;
     text-decoration: none;
     font-weight: 700;
 }
@@ -253,11 +253,16 @@ footer .footer{
     }
 
     .apresentacao{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .apresentacao .texto-apresentação{
         width: 100%;
+    }
+
+    .apresentacao img{
+        max-width: 320px;
+        min-height: 100%;
     }
 
     #quem-somos{
@@ -265,7 +270,8 @@ footer .footer{
     }
 
     #quem-somos img{
-        min-width: 320px;
+        max-width: 320px;
+        min-width: 70%;
         margin: auto;
     }
 
@@ -274,7 +280,8 @@ footer .footer{
     }
 
     .item-servico img{
-        width: 50%;
+        max-width: 320px;
+        min-width: 40%;
         margin: auto;
     }
 
