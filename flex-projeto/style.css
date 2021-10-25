@@ -261,8 +261,7 @@ footer .footer{
     }
 
     .apresentacao img{
-        max-width: 320px;
-        min-height: 100%;
+        width: 320px;
     }
 
     #quem-somos{
@@ -280,8 +279,8 @@ footer .footer{
     }
 
     .item-servico img{
-        max-width: 320px;
-        min-width: 40%;
+        max-width: 75%;
+        min-width: 25%;
         margin: auto;
     }
 
@@ -296,5 +295,13 @@ footer .footer{
         margin: auto;
         width: 100%;
         margin-bottom: 20px
+    }
+
+    footer{
+        height: auto;
+    }
+
+    footer .footer{
+        align-items: center;
     }
 }
