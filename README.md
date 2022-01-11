@@ -1,3 +1,3 @@
-# HTML e CSS
+# HTML, CSS e JS
 
-Repositório para projetos de HTML e CSS.
+Repositório para projetos de HTML, CSS e JavaScript.
