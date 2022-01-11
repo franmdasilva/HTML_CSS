@@ -1,0 +1,67 @@
+body {
+	background-color: antiquewhite;
+	color: rgb(15, 15, 50);
+	margin: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body.dark-mode {
+	background-color: rgb(15, 15, 50);
+	color: antiquewhite;
+}
+
+main {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+footer {
+	width: 100%;
+	background-color: rgb(15, 15, 100);
+	padding: 16px;
+	color: thistle;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	font-weight: 400;
+	display: flex;
+	justify-content: center;
+}
+
+footer.dark-mode {
+	background-color: thistle;
+	color: rgb(15, 15, 100);
+}
+
+button {
+	border-radius: 40px;
+	font-size: 24px;
+	font-weight: 400;
+	height: 60px;
+	width: 200px;
+	border: none;
+	background-color: rgb(15, 15, 100);
+	color: thistle;
+	transition: all .6s linear;
+}
+
+button:hover {
+	font-weight: bolder;
+	background-color: black;
+	color: white;
+}
+
+button.dark-mode {
+	background-color: thistle;
+	color: rgb(15, 15, 100);
+}
+
+button.dark-mode:hover {
+	font-weight: bolder;
+	background-color: white;
+	color: black;
+}
